@@ -54,6 +54,9 @@ A = "Magnus";
 B = "Magnus";
 document.write(A === B);
 
+document.write("string "+ 5);
+
+
 
 document.write(5 > 2 && 10 > 4);
 
@@ -87,15 +90,15 @@ function Ride_Funtion() {
     document.getElementById("Ride").innerHTML = Can_ride + " to ride.";
 }
 
-class Customer {
-    string FullName;
-    Boolean Active;
-    Customer(string name){
-    FullName = name;
-    Active = true;
-}
-}
-Customer cust = new Customer("Brenda Smith");
+// class Customer {
+//     string FullName;
+//     Boolean Active;
+//     Customer(string name){
+//     FullName = name;
+//     Active = true;
+// }
+// }
+// Customer cust = new Customer("Brenda Smith");
 
 function Vehicle(Make, Model, Year, Color) {
     this.Vehicle_Make = Make;
