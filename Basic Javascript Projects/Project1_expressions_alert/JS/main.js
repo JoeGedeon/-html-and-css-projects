@@ -7,7 +7,7 @@ document.write("<br>");
 var B = "Concatenated" + "String"
 document.write(B); 
 
-document.write("<br>");
+document.write("<br>")("<br>");
 
 document.write("Lisa told Bart,\"Knock it off,Bart! Or I'll tell dad!\"<br>\
     \"Eat my shorts!\ Bart responded.");
