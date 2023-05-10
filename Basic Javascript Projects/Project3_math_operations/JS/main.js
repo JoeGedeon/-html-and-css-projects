@@ -8,7 +8,6 @@ document.write(A);
 document.write("5 - 2");
 
 function subtraction_Function() {
-    var subtraction = 5 - 2;
     document.getElementById("Math").innerHTML = "5-2=" + Subtraction;
 }
 
