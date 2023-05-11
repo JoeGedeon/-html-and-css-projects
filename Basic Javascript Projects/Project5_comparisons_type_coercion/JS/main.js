@@ -154,3 +154,13 @@ function Add_numbers_1() {
 }
 Add_numbers_1();
 Add_numbers_2();
+
+function Age_Function() {
+
+    var age, Can_vote,
+    age = document.getElementById("Age").value;
+
+    Can_vote=(age > 18)?"You are old enough to vote!":"You are not old enough to vote!"
+    
+    document.getElementById("How_old_are_you?").innerHTML = Can_vote;
+}
