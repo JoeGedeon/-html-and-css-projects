@@ -23,6 +23,16 @@ function myFunction() {
     document.getElementById("Example").innerHTML = carName;
 }
 
+function myLoop() {
+    var Loop1 = 1;
+    var number ="";
+    while (Loop1 < 11) {
+        number += "<br>" + Loop1;
+        Loop1 ++;
+    }
+    document.getElementById("Loop").innerHTML =  number;
+}
+
 function constant_function() {
     const Musical_Instrument = {type:"guitar", brand:"Fender", color:"black"};
     Musical_Instrument.color = "blue";

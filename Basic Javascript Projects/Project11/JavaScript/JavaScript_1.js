@@ -1,4 +1,4 @@
-function Color_Funtion() {
+function Color_Function() {
     var Color_Output;
     var Colors = document.getElementById("Color_Input").value;
     var Color_String = "is a geat color!";
