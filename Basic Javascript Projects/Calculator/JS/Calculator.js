@@ -38,8 +38,8 @@ if (!Calculator.Display_Value.includes(dot)) {
 }
 
 //This section handles operations
-function handle_Operator(Next_Operator) {
-    const {First_Operand, Display_Value, operator} =Calculator;
+function Handle_Operator(Next_Operator) {
+    const {First_Operand, Display_Value, operator} = Calculator;
     //When an operator key is pressed we convert the current number 
     //display on the screento a number and then store the results
     //Calculator.First_Operand if it dosn't already exist.
@@ -73,7 +73,7 @@ const Perform_Calculation = {
     '*': (First_Operand, Second_Operand) => First_Operand / Second_Operand,
     '+': (First_Operand, Second_Operand) => First_Operand / Second_Operand,
     '-': (First_Operand, Second_Operand) => First_Operand / Second_Operand,
-    '=': (First_Operand, Second_Operand) => Second_Operand,
+    '=': (First_Operand, Second_Operand) => Second_Operand
 };
 function Calculator_Reset() {
     Calculator.Display_Value ='0';
@@ -101,7 +101,7 @@ keys.addEventListener('click', (event) => {
         return;
     }
     if (target.classList.contains('operator')) {
-        handle_Operator(target.value);
+        Handle_Operator(target.value);
         Update_Display();
         return
     }
