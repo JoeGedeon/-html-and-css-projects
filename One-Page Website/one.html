@@ -3,7 +3,7 @@
     <head>
 	  <title>Basic HTML</title>
 	  <meta charset="utf-8">
-	<link rel="stylesheet" href="new1.css" />
+	<link rel="stylesheet" href="./one_page_website.css/one_page_website.css" />
     </head>
 
            
@@ -213,6 +213,77 @@
 						</div>
 					</section>
 				    <!-- END RSVP -->
+
+					<!-- Images used to open the lightbox -->
+<div class="row">
+	<div class="column">
+	  <img src="./black_panther_images/Thumb/thumbnail_1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="./black_panther_images/Thumb/thumbnail_2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="./black_panther_images/Thumb/thumbnail_3.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="./black_panther_images/Thumb/thumbnail_4.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+	</div>
+  </div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+	<div class="modal-content">
+  
+	  <div class="mySlides">
+		<div class="numbertext">1 / 4</div>
+		<img src="./black_panther_images/Thumb/thumbnail_5.png" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">2 / 4</div>
+		<img src="./black_panther_images/Thumb/thumbnail_6.png" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">3 / 4</div>
+		<img src="./black_panther_images/Thumb/thumbnail_7.png" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">4 / 4</div>
+		<img src="./black_panther_images/Thumb/thumbnail_8.png" style="width:100%">
+	  </div>
+  
+	  <!-- Next/previous controls -->
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+	  <!-- Caption text -->
+	  <div class="caption-container">
+		<p id="caption"></p>
+	  </div>
+  
+	  <!-- Thumbnail image controls -->
+	  <div class="column">
+		<img class="demo" src="./black_panther_images/Thumb/thumbnail_9.png" onclick="currentSlide(1)" alt="Nature">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="./black_panther_images/Thumb/thumbnail_10.png" onclick="currentSlide(2)" alt="Snow">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="./black_panther_images/Thumb/thumbnail_11.png" onclick="currentSlide(3)" alt="Mountains">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="./black_panther_images/Thumb/42-movie.jpg" onclick="currentSlide(4)" alt="Lights">
+	  </div>
+	</div>
+  </div>
+
+  
 					
 					<!-- footer -->
 					<div>
@@ -222,5 +293,6 @@
 					<!-- END FOOTER -->
 					
 		</body>
+		<script src="./one_page_website,js/one_page_website.js"></script>
 </html>
 		
