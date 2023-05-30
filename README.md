@@ -15,3 +15,5 @@ This page is an example home page for the Wakanda  . It's styled using CSS and C
 Movie Theater Site:
 This page is an example of home page for a movie theater that is styled using Bootstrap 4. 
 It contains many components including but not limited to a navbar ,jubotron, form cards and dropdowns.
+
+
