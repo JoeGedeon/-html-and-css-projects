@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylessheet" href="css/todo.css">
+        <style>
+            #myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+        </style>
+    </head>
+    <body>
+        <h1 id="myHeader">My Header</h1>
+
+        <h2>JavaScript addEventListener()</h2>
+
+<p>This example uses the addEventListener() method to attach a click event to a button.</p>
+
+<button id="myBtn">Try it</button>
+
+<p id="demo"></p>
+<p id="example" ondblclick="myFunction()">Double click this paragraph</p>
+
+
+
+<script>
+
+    function myFunction() {
+        document.getElementById("example").style.color= "red";
+    }
+
+    
+document.getElementById("myBtn").addEventListener("click", displayDate);
+
+function displayDate() {
+  document.getElementById("demo").innerHTML = Date();
+}
+</script>
+        <input id="task"><button id="add">Add Item</button>
+        <hr>
+        <div id="todos"></div>
+
+        <script src="js/todo.js"></script>
+    </body>
+    <p id="myDog"></p>
+    <p>Saved name is:</p>
+    <p id="demo"></p>
+
+    <script>
+        // Set Items
+        localStorage.setItem("lastname", "Gedeon");
+        // Retreive
+        document.getElementById("demo").innerHTML =
+        localStorage.getItem("lastname");
+
+        /*set the data as a key/value pair to be saved localy in your browser*/
+        localStorage.setItem("Name", "Dax");
+        /*then use the key "Name" to return its value "Dax" */
+        document.getElementById("myDog").innerHTML = localStorage.getItem("Name");
+
+    </script>
+    <h1>The bottom Property</h1>
+
+<div class="parent">This div element has position: relative;
+  <div class="absolute"><strong>position: absolute and bottom 10px</strong><br>This div's bottom edge is placed 10 pixels above the bottom edge of the containing element.</div>
+</div>
+<br>
+
+<div class="parent">This div element has position: relative;
+  <div class="relative"><strong>position: relative and bottom 5px</strong><br>This div's bottom edge is placed 5 pixels above its normal position.</div>
+</div>
+<br>
+
+<div class="fixed"><strong>position: fixed and bottom 10px</strong><br>This div's bottom edge is placed 10 pixels from the bottom of the viewport.</div>
+
+<div class="parent">This div element has position: relative;
+  <div class="sticky"><strong>position: sticky and bottom 10px</strong><br>This div is sticky.</div>
+</div>
+
+    <footer><p><a href="http://www.jopagedeon.com/">Visit jopagedeon.com!</a></p></footer>
+</html>

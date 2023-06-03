@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <style>
+         div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation: mymove 5s infinite;
+ }
+
+ @keyframes mymove {
+from { top: 0px;}
+to {top: 200px;}
+}
+       </style>
+    </head>
+
+    <body>
+        <style>
+            html {
+              scroll-behavior: smooth;
+            }
+            
+            #section1 {
+              height: 600px;
+              background-color: pink;
+            }
+            
+            #section2 {
+              height: 600px;
+              background-color: yellow;
+            }
+            </style>
+            </head>
+            <body>
+            
+            <h1>Smooth Scroll</h1>
+            
+            <div class="main" id="section1">
+              <h2>Section 1</h2>
+              <p>Click on the link to see the "smooth" scrolling effect.</p>
+              <a href="#section2">Click Me to Smooth Scroll to Section 2 Below</a>
+              <p>Note: Remove the scroll-behavior property to remove smooth scrolling.</p>
+            </div>
+            <br>
+            
+            <div class="main" id="section2">
+              <h2>Section 2</h2>
+              <a href="#section1">Click Me to Smooth Scroll to Section 1 Above</a>
+
+              <div id="slideshow">
+                <div>
+                  <img src="//farm6.static.flickr.com/5224/5658667829_2bb7d42a9c_m.jpg">
+                </div>
+                <div>
+                  <img src="//farm6.static.flickr.com/5230/5638093881_a791e4f819_m.jpg">
+                </div>
+                <div>
+                  Pretty cool eh? This slide is proof the content can be anything.
+                </div>
+              </div>
+            </div>
+            <br>
+            <h1>HTML Links</h1>
+
+        <p><a href="http://www.jopagedeon.com/">Visit jopagedeon.com!</a></p>
+ 
+            
+            </body>
+    </body>
+</html>
+
+
+$ npx create-react-app my-app
+$ cd my-app
+$ npm start
+

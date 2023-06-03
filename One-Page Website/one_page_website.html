@@ -20,14 +20,19 @@
        p  {
          color: purple;
      }
+
+	 
      </style>
 
        
 	  <body>
+		
 
  	     <header>
 		 <h1>WAKANDA FOREVER</h1>
 		 <p>Introduction to "WAKANDA"</p>
+
+		
       
 		</header>
 	</body>
@@ -60,6 +65,8 @@
 				 <div class="container">
 					 <h1>Gallery</h1>
 					 <div class="flex-container">
+
+		
 
 						 
 						
@@ -234,7 +241,7 @@
 	  </div>
   
 	  <div class="column">
-		<img class="demo" src="./black_panther_images/Thumb/thumbnail_6.png" onclick="currentSlide(3)" alt="Mountains">
+		<img class="demo" src="./black_panther_images/Thumb/thumbnail_6.png" onclick="currentSlide(3)" alt="./black_panther_images/Thumb/thumbnail_6">
 	  </div>
   
 	  <div class="column">
@@ -242,6 +249,24 @@
 	  </div>
 	</div>
   </div>
+
+  <!--favorite character Form -->
+  <p>Who is your favorite character</p>
+      <form>
+		<input type="checkbox" id="character_name1" name="character_name1"
+	value="Black Panther">
+        <label for="character_name2">Black Panther</label><br>
+		<input type="checkbox" id="character_name2" name="character_name2"
+	value="Namor">
+		<label for="character_name3">Namor</label><br>
+		<input type="checkbox" id="character_name3" name="character_name3"
+	value="Black Panther Shuri">
+		<label for="character_name4">Black Panther Shuri</label><br>	
+		<input type="checkbox" id="character_name4" name="character_name4"
+	value="Dr.Doom">
+        <label for="character_name4">Dr.Doom</label><br>	
+	  </form>
+
 
 			 <!-- video container -->
 
@@ -261,6 +286,25 @@
 							 <p>
 
 								 <em>Please provide us with your basic contact information.</em>
+
+							<!--A button to open the popup form -->
+							<button class="open-button" onclick="openForm()">Open Form</button>
+
+							 <!-- The form -->
+                        <div class="form-popup" id="myForm">
+	                        <form action="/action_page.php" class="form-container">
+		                        <h1>Login</h1>
+
+		                    <label for="email"><b>Email</b></label>
+		                    <input type="text" placeholder="Enter Email" name="email" required>
+
+		                    <label for="psw"><b>Password</b></label>
+		                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+		                    <button type="submit" class="btn">Login</button>
+		                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+	</form>
+</div>
 
 							 </p>
 							 <div>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       <style>
+
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: yellow;
+  padding: 50px;
+  font-size: 20px;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+         /* div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation: mymove 5s infinite;
+ }
+
+ @keyframes mymove {
+from { top: 0px;}
+to {top: 200px;}
+} */
+       </style>
+    </head>
+
+    <body>
+        <h1>Horizontal Rule</h1>
+        <hr><!--Horizontal Rule Tag-->
+        <p>This is an example of a horizontal rule being used in html</p>
+
+        <h2>Sticky Element: Scroll Down to See the Effect</h2>
+        <p>Scroll down this page to see how  sticky positioning works.</p>
+        <div class="sticky">I will stick to the screen when you reach my scroll position</div>
+        
+        <p>Black Panther Character.</p>
+        <h2>Scroll back up again to "remove" the sticky position.</h2>
+        <style>
+            html {
+              scroll-behavior: smooth;
+            }
+            
+            #section1 {
+              height: 600px;
+              background-color: rgb(24, 2, 5);
+            }
+            
+            #section2 {
+              height: 600px;
+              background-color: rgb(220, 220, 7);
+            }
+            </style>
+            </head>
+            <body>
+            
+            <!-- <h1>Smooth Scroll</h1>
+            
+            <div class="main" id="section1">
+              <h2>Section 1</h2>
+              <p>Click on the link to see the "smooth" scrolling effect.</p>
+              <a href="#section2">Click Me to Smooth Scroll to Section 2 Below</a>
+              <p>Note: Remove the scroll-behavior property to remove smooth scrolling.</p>
+            </div>
+            <br>
+            
+            <div class="main" id="section2">
+              <h2>Section 2</h2>
+              <a href="#section1">Click Me to Smooth Scroll to Section 1 Above</a> -->
+              <br>
+              
+
+              <div id="slideshow">
+                <div>
+                  <img src="./Images/Thumb/thumbnail_2.png">
+                </div>
+                <div>
+                    <img src="./Images/Thumb/thumbnail_6.png">
+                  </div>
+                <div>
+                  <img src="./Images/Thumb/thumbnail_5.png">
+                </div>
+                <div>
+                    <img src="./Images/Thumb/thumbnail_3.png">
+                  </div>
+                <div>
+                  Pretty cool eh? This slide is proof the content can be anything.
+                </div>
+              </div>
+            </div>
+            <br>
+
+            <style>
+                body {font-family: Arial, Helvetica, sans-serif;}
+                * {box-sizing: border-box;}
+                
+                /* Button used to open the contact form - fixed at the bottom of the page */
+                .open-button {
+                  background-color: #555;
+                  color: white;
+                  padding: 16px 20px;
+                  border: none;
+                  cursor: pointer;
+                  opacity: 0.8;
+                  position: fixed;
+                  bottom: 23px;
+                  right: 28px;
+                  width: 280px;
+                }
+                
+                /* The popup form - hidden by default */
+                .form-popup {
+                  display: none;
+                  position: fixed;
+                  bottom: 0;
+                  right: 15px;
+                  border: 3px solid #f1f1f1;
+                  z-index: 9;
+                }
+                
+                /* Add styles to the form container */
+                .form-container {
+                  max-width: 300px;
+                  padding: 10px;
+                  background-color: white;
+                }
+                
+                /* Full-width input fields */
+                .form-container input[type=text], .form-container input[type=password] {
+                  width: 100%;
+                  padding: 15px;
+                  margin: 5px 0 22px 0;
+                  border: none;
+                  background: #f1f1f1;
+                }
+                
+                /* When the inputs get focus, do something */
+                .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+                  background-color: #ddd;
+                  outline: none;
+                }
+                
+                /* Set a style for the submit/login button */
+                .form-container .btn {
+                  background-color: #04AA6D;
+                  color: white;
+                  padding: 16px 20px;
+                  border: none;
+                  cursor: pointer;
+                  width: 100%;
+                  margin-bottom:10px;
+                  opacity: 0.8;
+                }
+                
+                /* Add a red background color to the cancel button */
+                .form-container .cancel {
+                  background-color: red;
+                }
+                
+                /* Add some hover effects to buttons */
+                .form-container .btn:hover, .open-button:hover {
+                  opacity: 1;
+                }
+                </style>
+                </head>
+                <body>
+                
+                <h2>Popup Form</h2>
+                <p>Click on the button at the bottom of this page to open the login form.</p>
+                <p>Note that the button and the form is fixed - they will always be positioned to the bottom of the browser window.</p>
+                
+                <button class="open-button" onclick="openForm()">Open Form</button>
+                
+                <div class="form-popup" id="myForm">
+                  <form action="/action_page.php" class="form-container">
+                    <h1>Login</h1>
+                
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+                
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                
+                    <button type="submit" class="btn">Login</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                  </form>
+                </div>
+                
+                <script>
+                function openForm() {
+                  document.getElementById("myForm").style.display = "block";
+                }
+                
+                function closeForm() {
+                  document.getElementById("myForm").style.display = "none";
+                }
+
+            <h2>CSS Buttons</h2>
+
+<button>Default Button</button>
+<a href="#" class="button">Link Button</a>
+<button class="button">Button</button>
+<input type="button" class="button" value="Input Button">
+
+            <h1>HTML Links</h1>
+
+        <p><a href="http://www.jopagedeon.com/">Visit jopagedeon.com!</a></p>
+ 
+            
+            
+    </body>
+</html>
