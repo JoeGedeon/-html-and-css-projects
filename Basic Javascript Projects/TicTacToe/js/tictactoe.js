@@ -27,6 +27,7 @@ function placeXOrO(squareNumber) {
         checkWinConditions();
         //This condition is for changing the active player.
         if (activePlayer === 'X') {
+            //If active player is 'X' change it to 'O'
             activePlayer = 'O';
             //If active player is anything other than 'X'
         } else {
@@ -73,25 +74,25 @@ function checkWinConditions() {
     // X 6, 7, 8 condition.
     else if (arrayIncludes('6X', '7X', '8X')) { drawWinLine(50, 508, 558, 508) }
     // X 0, 3, 6 condition.
-    else if (arrayIncludes('0X', '3X', '6X')) { drawWinLine(50, 304, 558, 304) }
+    else if (arrayIncludes('0X', '3X', '6X')) { drawWinLine(100, 50, 100, 558) }
     // X 1, 4, 7 condition.
-    else if (arrayIncludes('1X', '4X', '7X')) { drawWinLine(50, 304, 558, 304) }
+    else if (arrayIncludes('1X', '4X', '7X')) { drawWinLine(304, 50, 304, 558 ) }
     // X 2, 5, 8 condition.
-    else if (arrayIncludes('2X', '5X', '8X')) { drawWinLine(50, 304, 558, 304) }
+    else if (arrayIncludes('2X', '5X', '8X')) { drawWinLine(508, 50, 508, 558) }
     // X 6, 4, 2 condition.
-    else if (arrayIncludes('6X', '4X', '2X')) { drawWinLine(50, 304, 558, 304) }
+    else if (arrayIncludes('6X', '4X', '2X')) { drawWinLine(100, 508, 510, 90) }
     // X 0, 4, 8 condition.
     else if (arrayIncludes('0X', '4X', '8X')) { drawWinLine(100, 100, 520, 520) }
     // O 0, 1, 2 condition.
-    else if (arrayIncludes('0O', '1O', '2O')) { drawWinLine(50, 508, 558, 508) }
+    else if (arrayIncludes('0O', '1O', '2O')) { drawWinLine(50, 100, 558, 100) }
     // O 3, 4, 5 condition.
     else if (arrayIncludes('3O', '4O', '5O')) { drawWinLine(50, 304, 558, 304) }
     // O 6, 7, 8 condition.
-    else if (arrayIncludes('6O', '7O', '8O')) { drawWinLine(100, 50, 100, 558) }
+    else if (arrayIncludes('6O', '7O', '8O')) { drawWinLine(50, 508, 558, 508) }
     // O 0, 3, 6 condition.
     else if (arrayIncludes('0O', '3O', '6O')) { drawWinLine(100, 50, 100, 558) }
     // O 1, 4, 7 condition.
-    else if (arrayIncludes('1O', '4O', '7O')) { drawWinLine(304, 50, 508, 558) }
+    else if (arrayIncludes('1O', '4O', '7O')) { drawWinLine(304, 50, 304, 558) }
     // O 2, 5, 8 condition.
     else if (arrayIncludes('2O', '5O', '8O')) { drawWinLine(508, 50, 508, 558) }
     // O 6, 4, 2 condition.
@@ -128,9 +129,9 @@ function disableClick() {
 //This function takes a string paramter of the path you set earlier for
 //placement sound('./media/place.mp3')
 function audio(audioURL) {
-    //This function we create a new audio object and we pass the path as a parameter .
+    // we create a new audio object and we pass the path as a parameter .
     let audio = new Audio(audioURL);
-    //Play method plays ou audio sound.
+    //Play method plays our audio sound.
     audio.play();
 }
 
